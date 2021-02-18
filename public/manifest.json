@@ -1,5 +1,5 @@
 {
-  "name": "Words Definations Generator",
+  "name": "Words Definitions Generator",
   "version": "1.0.0",
   "manifest_version": 2,
   "description": "An extension for generating highlighted words definations on the Chrome browser",
@@ -8,6 +8,11 @@
   },
   "browser_action": {
     "default_icon": "dict512.png",
-    "default_popup": "popup.html"
-  }
+    "default_popup": "index.html",
+    "default_title": "Open page"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "activeTab"
+  ]
 }
